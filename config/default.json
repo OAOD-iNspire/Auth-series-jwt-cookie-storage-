@@ -1,5 +1,4 @@
 {
    "mongoURI":"'mongodb://localhost:27017/suggestion-board",
    "JWTsecret": "learningjwt",
-    "mongoUR":"'mongodb://localhost:27017/suggestion-board",
 }
