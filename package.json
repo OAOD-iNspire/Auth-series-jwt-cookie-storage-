@@ -18,8 +18,12 @@
     "set-cookie-parser": "^2.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.5.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
     "babel-preset-es2017": "^6.24.1"
   }
 }

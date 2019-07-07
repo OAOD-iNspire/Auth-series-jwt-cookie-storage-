@@ -1,4 +1,4 @@
 {
-   "mongoURI":"mongodb://heroku_n7jkw0wz:36ulks5vd2q38mdn5gadb0jjdb@ds147207.mlab.com:47207/heroku_n7jkw0wz",
+   "mongoURI":"'mongodb://localhost:27017/suggestion-board",
    "JWTsecret": "learningjwt"
 }

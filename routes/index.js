@@ -14,7 +14,7 @@ router.post('/createuser', authController.create_user);
 router.post('/validateuser', authController.validate_user);
 
 //private
-router.post('/suggestionboard', jwtChecker.jwtVerify , suggestionBoardController.suggestion_board);
+router.get('/suggestionboard', jwtChecker.jwtVerify , suggestionBoardController.suggestion_board);
 router.post('/newsuggestion', jwtChecker.jwtVerify, suggestionBoardController.new_suggestion);
 router.post('/deletesuggestion/:id', jwtChecker.jwtVerify, suggestionBoardController.delete_suggestion);
 router.get('/searchcategory', jwtChecker.jwtVerify, searchController.search_suggestion_category);
