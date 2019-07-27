@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 const app = express();
 const dbConnection = require('./config/db');
 const baseRoute = require('./routes/index');
@@ -8,6 +9,9 @@ const cookieParser = require('cookie-parser');
 //connect database
 dbConnection();
 
+//enable cross origin resources sharing 
+
+app.use(cors());
 //initialize middleware 
 app.use(cookieParser());
 app.use(express.json({ extended: false }));
