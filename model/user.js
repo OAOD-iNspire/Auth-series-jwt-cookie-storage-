@@ -10,7 +10,7 @@ const saltWork = 10 ;
 const User = new model({ 
 
   alias:{
-     type: String
+     type: Number
   },
   
   email:{ 
