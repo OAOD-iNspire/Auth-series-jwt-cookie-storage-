@@ -96,6 +96,8 @@ console.log('iran')
                                                 secure: isSecure,
                                                 signed: true
                                             });
+
+               return res.json(token)
               
 
 })
