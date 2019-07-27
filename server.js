@@ -17,7 +17,7 @@ dbConnection();
 
 //enable cross origin resources sharing 
 
-app.use(cors());
+app.use(cors(corsOptions));
 //initialize middleware 
 app.use(cookieParser());
 app.use(express.json({ extended: false }));
