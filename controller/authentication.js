@@ -78,7 +78,7 @@ const isMatch = await bcrypt.compare(password, user[0].password)
 //handle error if passwords do not match
 if(!isMatch){
      
-	return res.status(400).json({msg:'incorrect password'})
+	return res.status(401).json({msg:'incorrect password'})
    }
 
 const uniqueId = {
