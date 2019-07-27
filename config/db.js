@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const config = require('config');
 const dbUrl = config.get('mongoURI');
 const async = require('asyncawait/async');
-const wait = require('asyncawait/await');
+
 
 const dbOptions = { 
 useNewUrlParser: true,
