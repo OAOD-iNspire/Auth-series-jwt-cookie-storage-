@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const cookies = require('universal-cookie');
+const Cookies = require('universal-cookie');
 
 
 const cookies = new Cookies(req.headers.cookie);
