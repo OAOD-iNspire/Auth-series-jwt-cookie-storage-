@@ -92,6 +92,7 @@ jwt.sign(uniqueId, config.get('JWTsecret'), (err, token ) => {
 console.log('iran')
                    if(err){ console.log('i ran'); throw err}
                    res.cookie('jwtHolder', token, {domain:'localhost:3000', path: '/', httpOnly: false});
+                   res.set('Set-Cookie', token )
                    res.header('Access-Control-Allow-Credentials', 'true');
                    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
                    res.setHeader('cookie', token)
