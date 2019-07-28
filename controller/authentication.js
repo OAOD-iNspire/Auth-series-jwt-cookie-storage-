@@ -95,7 +95,7 @@ console.log('iran')
                    res.set('Set-Cookie', token )
                    res.header('Access-Control-Allow-Credentials', 'true');
                    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-                   res.setHeader('cookie', token)
+                   res.setHeader('set-cookie', token)
                    return res.status(200).json(token)
               
 
