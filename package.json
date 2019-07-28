@@ -18,7 +18,8 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.1",
-    "set-cookie-parser": "^2.3.5"
+    "set-cookie-parser": "^2.3.5",
+    "universal-cookie": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

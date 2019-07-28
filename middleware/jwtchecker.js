@@ -1,5 +1,9 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
+const cookies = require('universal-cookie');
+
+
+const cookies = new Cookies(req.headers.cookie);
 
 
 
@@ -8,7 +12,7 @@ exports.jwtVerify = async (req, res, next) =>{
 // retrieve token value from request
 //const token = req.header('x-auth-token'); 
 
-const token = req.cookies['jwtHolder'];
+const token = cookies.get('jwtHolder');
 console.log(token)
 try{
 //verify the presence of a value and handle possible error
