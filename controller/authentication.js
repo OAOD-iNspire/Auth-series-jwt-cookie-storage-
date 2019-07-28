@@ -94,6 +94,7 @@ console.log('iran')
                    res.cookie('jwtHolder', token, {domain:'localhost:3000', path: '/', httpOnly: false});
                    res.header('Access-Control-Allow-Credentials', 'true');
                    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+                   res.setHeader('cookie', token)
                    return res.status(200).json(token)
               
 
