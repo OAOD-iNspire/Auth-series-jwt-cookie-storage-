@@ -9,7 +9,7 @@ const Cookies = require('universal-cookie');
 
 exports.jwtVerify = async (req, res, next) =>{ 
 
-	const cookies = new Cookies(req.headers.cookie);
+	const cookies = req.universalCookies;
 
 // retrieve token value from request
 //const token = req.header('x-auth-token'); 
