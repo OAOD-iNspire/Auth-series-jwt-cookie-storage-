@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 
 //cors config
 var corsOptions = {
-  origin:'http://suggestionapi.herokuapp.com',
+  origin:'http://localhost:3000',
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
   credentials: true,
   allowedHeaders:'Set-Cookie,Content-Type'
