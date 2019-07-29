@@ -91,7 +91,7 @@ console.log(config.get('JWTsecret'));
 jwt.sign(uniqueId, config.get('JWTsecret'), (err, token ) => {
 console.log('iran')
                    if(err){ console.log('i ran'); throw err}
-                   res.cookie('jwtHolder', token);
+                   res.cookie('jwtHolder', token, {httpOnly:true});
                    return res.json(token)
 
 })
