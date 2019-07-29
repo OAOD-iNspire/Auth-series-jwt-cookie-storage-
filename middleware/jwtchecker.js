@@ -13,7 +13,7 @@ exports.jwtVerify = async (req, res, next) =>{
  const cookies = new Cookies(req.headers.cookie)
  console.log(cookies.get('jwtHolder'))
 
-//const token = req.cookie['jwtHolder'];
+ const token = cookies.get('jwtHolder')
 //console.log(token)
 try{
 //verify the presence of a value and handle possible error
