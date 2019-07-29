@@ -10,11 +10,11 @@ exports.jwtVerify = async (req, res, next) =>{
 //const token = req.header('x-auth-token'); 
 
 
- const cookies = new Cookies(req.headers.cookie)
- console.log(cookies.get('jwtHolder'))
+const cookies = new Cookies(req.headers.cookie)
+ //console.log(cookies.get('jwtHolder'))
 
- const token = cookies.get('jwtHolder')
-//console.log(token)
+const token = cookies.get('jwtHolder')
+console.log(token)
 try{
 //verify the presence of a value and handle possible error
 
